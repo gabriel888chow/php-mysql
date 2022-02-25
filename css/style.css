@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 html {
     font-family: 'Lato', sans-serif;
     font-size:24px;
@@ -10,7 +15,7 @@ nav {
     text-align: center;
     margin: 0 auto;
     background-color: #313d38;
-    padding: 15px 0;
+    /* padding: 15px 0; */
     margin-bottom: 30px;
     color:azure;
     min-height: 60px;

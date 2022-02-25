@@ -1,4 +1,4 @@
-<?php include('header.php'); ?>
+<?php include_once('header.php'); ?>
 
 
 <h1>About Us</h1>
@@ -6,4 +6,4 @@
     <p>123</p>
 </div>
 
-<?php include('footer.php'); ?>
+<?php include_once('footer.php'); ?>

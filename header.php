@@ -2,7 +2,8 @@
 <?php 
 
 // 把stock.php 的資料放入header, stock資料可以每頁用到
-include 'stock.php'; 
+include_once 'stock.php'; 
+include_once 'dbConnect.php';
 session_start();
 
 ?>
@@ -15,6 +16,9 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furniture Store</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>

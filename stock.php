@@ -17,7 +17,7 @@ $furns =
     ],
     [
         'furn_id'   =>  3,
-        'name'      =>  'TV Bench',
+        'name'      =>  'TV_Bench',
         'price'     =>  1800,
         'image'     =>  'tvBench.jpg',
         'remaining' =>  5

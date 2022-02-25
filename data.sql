@@ -1,0 +1,1 @@
+INSERT INTO `furniture_store`.`staff` (`email`, `password`, `name`) VALUES ('may@gmail.com', '123', 'May');

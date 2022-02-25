@@ -1,4 +1,4 @@
-<?php include('header.php'); ?>
+<?php include_once('header.php'); ?>
 
 <!-- method 我兩個值"get(用於相對公開資料) & post(用於相對私隱資料)" -->
 <!-- action="/functions.php?op=createOrder" 連接 function.php -->
@@ -23,5 +23,5 @@
   <input class="buyBtn" type="submit" value="confirm">
 </form> 
 
-<?php include('footer.php'); ?>
+<?php include_once('footer.php'); ?>
     
