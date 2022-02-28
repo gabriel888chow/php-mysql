@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    /* font-size:24px; */
+    /* color:#313d38; */
+    box-sizing: border-box;
+    margin:0;
+}
+
+nav {
+    margin: 0;
+    background-color: #272727;
+    min-height: 40px;
+}
+
+li .nav-link  {
+    color: #ffffff;
+}
+
+.container {
+    max-width: 960px;
+    margin:0 auto;
+    line-height: 1.7;
+}
+
+.flex-grid {
+    display: flex;
+    max-width: 960px;
+    margin:0 auto;
+    text-align: center;
+    overflow-wrap: normal;
+}
+
+.buyBtn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    margin: 20px 2px;
+    cursor: pointer;
+}
+
+.col {
+    flex: 1;
+}
+
+h1 {
+    font-size: 240%;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 180%;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+img {
+    height: 200px;
+}
+
+/* footer.php */
+footer {
+    text-align: center;
+    margin: 0px;
+    background-color: #777777;
+    padding: 10px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+.socials i {
+    margin: 0 1rem;
+}
+
+
+footer h6 {
+    color: #ffffff;
+    /* font-weight: bold; */
+}
+
+footer p {
+    font-size: x-small;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+/* footer.php */
+
+form {
+    text-align: center;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+.clientMenu {
+    padding-left:10px;
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.thankyouText {
+    text-align:center;
+    font-size: 140%;
+    margin: 80px 0;
+}
+
+.staffMenu {
+    padding-right:10px;
+    position: relative;
+    display: block;
+    float: right;
+}
+
+.order {
+    border: black dotted;
+    margin: 40px 0;
+}
+
+/* index.php */
+.background {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    min-width: 1000px;
+    z-index:-10;
+    zoom: 1;
+    background-color: #fff;
+    background: url(../images/index_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;
+}
+
+.title h1{
+    font-size: 80px;
+    font-family: 'Lobster', cursive;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 250px 500px 250px 0;
+    padding: 0;
+    
+}
+/* index.php */
+
+
+/* login.php */
+.login {
+    /* margin: 100px; */
+    padding: 50px 0;
+}
+
+.loginL {
+    padding: 0;
+}
+
+.loginR {
+    padding: 0;
+}
+
+.loginR img {
+   height: 450px;
+   width: 100%;
+   background-size: cover;
+   object-fit: cover;
+}
+
+.login h1 {
+    font-family: 'Lobster', cursive;
+}
+
+#btn {
+    background-color: #777777;
+    border-radius: 15px ;
+    border: #272727 1px solid;
+    color: #fff;
+}
+/* login.php */
+
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 960px) {
+    .flex-grid {
+        display: block;
+      }
+}
