@@ -21,14 +21,39 @@ li .nav-link  {
     color: #ffffff;
 }
 
-.container {
+/* .container {
     max-width: 960px;
     margin:0 auto;
     line-height: 1.7;
+} */
+
+/* store.php */
+
+
+.bar {
+    width: 100%;
+    margin: 0;
+    background-color: rgb(32, 32, 32);
 }
 
-.flex-grid {
-    display: flex;
+
+
+.store-img {
+    justify-self: center;
+}
+
+.store-card {
+    padding: 60px;
+}
+
+.store h1 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    padding: 20px;
+}
+
+.flex-grid-mobile {
+    display: none;
     max-width: 960px;
     margin:0 auto;
     text-align: center;
@@ -36,39 +61,27 @@ li .nav-link  {
 }
 
 .buyBtn {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 16px;
+    padding: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 19px;
-    margin: 20px 2px;
+    font-size: 10px;
+    margin: 10px 0;
     cursor: pointer;
+    background-color: #777777;
+    border-radius: 15px ;
+    border: #272727 1px solid;
+    color: #fff;
 }
 
 .col {
     flex: 1;
 }
 
-h1 {
-    font-size: 240%;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-h2 {
-    font-size: 180%;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-img {
+.flex-grid-mobile img {
     height: 200px;
 }
+/* store.php */
 
 /* footer.php */
 footer {
@@ -119,12 +132,6 @@ input {
     float: left;
 }
 
-.thankyouText {
-    text-align:center;
-    font-size: 140%;
-    margin: 80px 0;
-}
-
 .staffMenu {
     padding-right:10px;
     position: relative;
@@ -132,10 +139,7 @@ input {
     float: right;
 }
 
-.order {
-    border: black dotted;
-    margin: 40px 0;
-}
+
 
 /* index.php */
 .background {
@@ -156,21 +160,29 @@ input {
     background-position: center 0;
 }
 
+.title {
+    padding: 250px 0;
+}
+
 .title h1{
     font-size: 80px;
     font-family: 'Lobster', cursive;
     color: #ffffff;
     font-weight: bold;
-    margin: 250px 500px 250px 0;
     padding: 0;
-    
+}
+
+.title p{
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 0;
 }
 /* index.php */
 
 
 /* login.php */
 .login {
-    /* margin: 100px; */
     padding: 50px 0;
 }
 
@@ -191,6 +203,7 @@ input {
 
 .login h1 {
     font-family: 'Lobster', cursive;
+    margin-bottom: 20px;
 }
 
 #btn {
@@ -202,9 +215,93 @@ input {
 /* login.php */
 
 
+/* order.php */
+.order {
+    padding: 50px 0;
+}
+.orderL img {
+    height: 450px;
+    width: 100%;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.orderL {
+    padding: 0;
+}
+
+.orderR {
+    padding: 60px;
+}
+
+.orderR h1 {
+    font-family: 'Lobster', cursive;
+}
+
+/* order.php */
+
+/* about.php */
+.about h1 {
+    font-family: 'Lobster', cursive;
+    margin: 20px 0;
+}
+
+.aboutP {
+    padding: 20px 0;
+    margin: 0;
+}
+
+.aboutImg img {
+    height: 450px;
+    width: 100%;
+    background-size: cover;
+    object-fit: cover;
+    padding: 0;
+} 
+/* about.php */
+
+/* order-completed.php */
+.orderCom {
+    padding: 250px 400px 250px 100px;
+}
+
+.orderBackground {
+    background: url("../images/orderBackground.jpg");
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+}
+/* order-completed.php */
+
+/* allOrders.php */
+
+.allOrder {
+    text-align: center;
+}
+.allOrder h1{
+    padding: 20px;
+    font-family: 'Lobster', cursive;
+}
+.allOrder-card {
+    padding: 20px ;
+    text-align: center;
+    margin: 20px 0;
+    border: #272727 1px solid;
+}
+.allOrder-card row{
+    padding: 0;
+}
+/* allOrders.php */
+
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
 @media (max-width: 960px) {
-    .flex-grid {
+    .flex-grid-mobile {
         display: block;
+        text-align: center;
       }
+
+    .bar,
+    .store {
+        display: none;
+    }
 }

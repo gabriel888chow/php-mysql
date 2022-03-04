@@ -3,8 +3,9 @@
     <div class="row container">
         <div class="col title">
             <h1>Creative Furniture</h1>
+            <p>Home Sweet Home</p>
         </div>
     </div>
 </div>
-<!-- <?php include_once('footer.php'); ?> -->
+
     

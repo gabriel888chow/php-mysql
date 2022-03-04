@@ -2,7 +2,7 @@
 <?php 
 
 // 把stock.php 的資料放入header, stock資料可以每頁用到
-include_once 'stock.php'; 
+// include_once 'stock.php'; 
 include_once 'dbConnect.php';
 session_start();
 

@@ -1,7 +1,40 @@
 <?php include_once('header.php'); ?>
-    <h1>Furniture Store</h1>
-    
-    <div class="flex-grid">
+    <div class="container store">
+        <h1>Furniture Store</h1>
+        
+            
+            <?php
+             $furnQ = mysqli_query($dbConnection, "SELECT * FROM `furns`");
+             while ($furn = mysqli_fetch_assoc($furnQ)) {
+               echo '
+               <hr class="bar"></hr>
+               <div class="row store-card">
+                    <div class="col storeL">
+                        <img src="/images/'.$furn['image'].'" class="store-img"/>
+                    </div>
+
+                    <div class="col storeR d-flex align-items-center">
+
+                        <p>
+                            Name: '.$furn['name'].'<br>
+                            Width: '.$furn['width'].'cm<br>
+                            Height: '.$furn['height'].'cm<br>
+                            Depht: '.$furn['depth'].'cm<br>
+                            Price:$ '.$furn['price'].'<br> 
+                            <a href="/order.php?furn_id='.$furn['furn_id'].'" class="buyBtn">Order '.$furn['name'].'</a> <br>
+                        </p> 
+
+                    </div>
+                </div>
+                ';
+              }
+            ?>
+        
+        
+        
+    </div>
+
+    <div class="flex-grid-mobile">
         <?php 
             // show the stock
             // 把 dbConnect.php 入面的($dbConnection)拎黎用
@@ -15,25 +48,13 @@
                 <img src="/images/'.$furn['image'].'"/>
                 <p>
                     Name: '.$furn['name'].'<br>
+                    Width: '.$furn['width'].'cm<br>
+                    Height: '.$furn['height'].'cm<br>
+                    Depht: '.$furn['depht'].'cm<br>
                     Price:$ '.$furn['price'].'<br> 
-                    <a href="/order.php?furn_id='.$furn['furn_id'].'" class="buyBtn">Booking'.$furn['name'].'</a> <br>
+                    <a href="/order.php?furn_id='.$furn['furn_id'].'" class="buyBtn">Order '.$furn['name'].'</a> <br>
                 </div>';
             }
-
-            // use foreach function to get data in stock.php (stock.php include_once in header.php)
-            /* foreach($furns as $key => $furn)
-            {
-                // show the stock data
-                // this <a> link is from order.php
-                echo '<div class="col">
-                    <img src="/images/'.$furn['image'].'"/>
-                        <p>
-                            Name: '.$furn['name'].'<br>
-                            Price:$ '.$furn['price'].'<br> 
-                                <a href="/order.php?furn_id='.$furn['furn_id'].'" class="buyBtn">Booking'.$furn['name'].'</a><br>
-                        </p>
-                </div>';
-            } */
         ?>
     </div>
 
